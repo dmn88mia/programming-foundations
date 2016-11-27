@@ -1,0 +1,5 @@
+select_first_num: "Please select your first number:"
+select_second_num: "Please select your second number:"
+error: "please select a number not zero and not a string, any number over 0 ?"
+operation: "Please select the operation: 'add','subtract','multiply' or 'division'."
+more_calculations: "Would you like to make another calculation? (Y) for yes, (N) for no."
