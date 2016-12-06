@@ -26,13 +26,7 @@
 #then make sure to return that variable, or that variable must be the last line in the method
 #understood
 
-x = 0
 
-while x < 10 do
-  puts x
-  x += 1
-end
-   
 
 
 
