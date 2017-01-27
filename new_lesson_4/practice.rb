@@ -1,33 +1,9 @@
-def h
-  
- books = [
-  {title: 'One Hundred Years of Solitude', author: 'Gabriel Garcia Marquez', published: '1967'},
-  {title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', published: '1925'},
-  {title: 'War and Peace', author: 'Leo Tolstoy', published: '1869'},
-  {title: 'Ulysees', author: 'James Joyce', published: '1922'}
-]
+arr = [['b', 'c', 'a'], [2, 1, 3], ['blue', 'black', 'green']]
 
-books.sort_by do |hash|
-  hash[:published].to_i
-end
+def descending(arr)
+  arr.map do |sub_arr|
+    sub_arr.sort { |a, b| b <=> a } 
+  end
 end
 
-
-p h
-
-# books = [
-#   {title: 'One Hundred Years of Solitude', author: 'Gabriel Garcia Marquez', published: '1967'},
-#   {title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', published: '1925'},
-#   {title: 'War and Peace', author: 'Leo Tolstoy', published: '1869'},
-#   {title: 'Ulysees', author: 'James Joyce', published: '1922'}
-# ]
-
-# books.sort do |hash|
-#   hash[:published].to_i
-# end
-
-# new_book = books.map do |h|
-#   p h[:published].to_i
-# end
-# # p books[:published]
-# p new_book.sort
+p descending(arr)
